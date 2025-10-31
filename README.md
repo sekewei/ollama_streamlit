@@ -33,7 +33,7 @@ The application automatically detects and lists all Ollama models (LLM repositor
 
 ```bash
 ollama pull llama3.1
-ollama pull gemma3:12b-it-qat
+ollama pull gemma2:9b
 ```
 
 Then restart the Streamlit app to see the newly installed models in the dropdown.

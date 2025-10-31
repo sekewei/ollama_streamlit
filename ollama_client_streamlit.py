@@ -149,7 +149,7 @@ max_tokens = st.sidebar.slider("max_tokens", 0, 2048, 1024, 1)
  
 # selectbox for model_engine
 models = get_ollama_models()
-#print(models)  # ["llama3.1", "gemma3:12b-it-qat"]
+#print(models)  # ["llama3.1", "gemma2:9b"]
 model_engine = st.sidebar.selectbox("model_engine", models)
  
 # input text
