@@ -17,14 +17,15 @@ To view GitHub repositories that have been shared with you (repositories where y
 
 2. **Via GitHub CLI:**
    ```bash
-   gh repo list --source
+   gh repo list --collaborator
    ```
-   This will show repositories you have access to, including those shared with you.
+   This will show repositories where you're a collaborator (shared with you).
 
 3. **Via GitHub API:**
    ```bash
-   curl -H "Authorization: token YOUR_TOKEN" https://api.github.com/user/repos?affiliation=collaborator
+   curl -H "Authorization: Bearer YOUR_PERSONAL_ACCESS_TOKEN" https://api.github.com/user/repos?affiliation=collaborator
    ```
+   Replace `YOUR_PERSONAL_ACCESS_TOKEN` with your GitHub personal access token.
 
 ### How does this app list available Ollama models?
 
